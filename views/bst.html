@@ -25,7 +25,7 @@
           <a class="nav-link" href="./bubble_sort.html">Buble Sort</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./linked_list.html">Link List</a>
+          <a class="nav-link" href="./linked_list/list.html">Link List</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./bst.html">Binary Search Tree</a>
@@ -50,11 +50,13 @@
               - We can always keep the cost of insert(), delete(), lookup() to O(logN)
               where N is the number of nodes in the tree. <br>
               - We have an ordering of keys stored in the tree.<br>
-              -
+              - We can implement order statistics with binary search tree - Nth smallest, Nth largest element. 
+              This is because it is possible to look at the data structure as a sorted array. <br>
             </div>
             <div class="col-6">
               <h4 style="color: red;">Disadvantages</h4>
-              <!-- DISADVANTAGE -->
+              - The main disadvantage is that we should always implement a balanced binary search tree - AVL tree, Red-Black tree, Splay tree. 
+              Otherwise the cost of operations may not be logarithmic and degenerate into a linear search on an array. <br>
             </div>
           </div>
         </div>
