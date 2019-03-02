@@ -45,10 +45,14 @@
         <div class="row">
           <div class="col-6">
             <h4 style="color: red;">Advantages</h4>
+            Provides linear data structure solutions. <br>
+            Easy to insert, delete node without reorganize the array. <br>
+            Allocate dynamic memory
             <!-- ADVANTAGE -->
         </div>
           <div class="col-6">
             <h4 style="color: red;">Disadvantages</h4>
+            Do not allow random access to data. So sometimes, we must traverse all node to do what we want (delete tail, insert tail) <br>
             <!-- DISADVANTAGE -->
           </div>
         </div>
@@ -58,6 +62,52 @@
       <!-- SOURCE CODE -->
       <h4 style="color: red;">Code</h4>
       <code>
+        <span style="color: brown; "> //define  </span> <br>
+        struct LLintNode {
+          <br>    int Data;
+          <br>struct LLintNode* Next;
+        <br>}; <br>
+        <span style="color: brown; "> //counts number of node  </span> <br>
+         int LengthLL(LLNode* head) { <br>
+       int length = 0; <br>
+        while (head != NULL) { <br>
+        ++length; <br>
+        head = head ->Next; <br>
+        } <br>
+        return length; <br>
+        }<br>
+
+<span style="color: brown; "> //insert tail  </span> <br>
+        void AddLast(LLNode** head, int data) {<br>
+LLNode** tmp = head; <br>
+ 
+LLNode* NewNode; <br>
+NewNode = (LLNode*) malloc(sizeof(LLNode)); <br>
+NewNode->Data = data; <br>
+NewNode->Next = NULL; <br>
+ 
+if ((*tmp) == NULL) { <br>
+(*tmp) = NewNode; <br>
+} else { <br>
+while ((*tmp)->Next !=NULL) { <br>
+tmp = &((*tmp)->Next); <br>
+} <br>
+(*tmp)->Next = NewNode; <br>
+}<br>
+}<br>
+<br>
+
+<span style="color: brown; "> //remove tail  </span> <br>
+void RemoveLast(LLNode** head) {<br>
+    LLNode** tmp = head;<br>
+    if ((*tmp) !=NULL) {<br>
+        while ((*tmp)->Next != NULL) { <br>
+            tmp = &((*tmp)->Next);<br>
+        }<br>
+    }<br>
+    (*tmp) = NULL;  <br>
+ 
+}
         <!-- CODE DEMO -->
       </code>
     </div>
