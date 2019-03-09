@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
 <meta charset="UTF-8">
 <meta name="description" content="A Binary Search Tree (BST) is a binary tree in which each vertex has only up to 2 children that satisfies BST property: All vertices in the left subtree of a vertex must hold a value smaller than its own and all vertices in the right subtree of a vertex must hold a value larger than its own (we have assumption that all values are distinct integers in this visualization and small tweak is needed to cater for duplicates/non integer). Try clicking Search(7) for a sample animation on searching a random value &amp;in; [1..99] in the random BST above.An Adelson-Velskii Landis (AVL) tree is a self-balancing BST that maintains it&#39;s height to be O(log N) when having N vertices in the AVL tree.Click &#39;Next&#39; (on the top right)/press &#39;Page Down&#39; to advance this e-Lecture slide, use the drop down list/press &#39;Space&#39; to jump to a specific slide, or Click &#39;X&#39; (on the bottom right)/press &#39;Esc&#39; to go to Exploration mode.">
@@ -19,7 +19,6 @@
 <link rel="stylesheet" href="https://visualgo.net/css/viz-1.0.1.css">
 <link rel="stylesheet" href="https://visualgo.net/css/visual.css">
 <link rel="stylesheet" href="https://visualgo.net/css/drawgraph.css">
-<!-- <script type="text/javascript" src="js/graph_library/GraphWidget.js" ></script> -->
 <style>
       #e-lecture {
         top: 45px;
@@ -84,14 +83,14 @@
 <a id="home" href="/">Visu<span class="colour">Algo</span><span style="font-size: 40%">.net</span></a>
 /
 <select id="Language" onchange="changeURL()">
-<option value="en" selected>en</option>
+<option value="en">en</option>
 <option value="zh">zh</option>
 <option value="es">es</option>
 <option value="pt">pt</option>
 <option value="ru">ru</option>
 <option value="id">id</option>
 <option value="de">de</option>
-<option value="bn">bn</option>
+<option value="bn" selected>bn</option>
 <option value="ja">ja</option>
 <option value="ko">ko</option>
 <option value="vi">vi</option>
@@ -283,7 +282,7 @@ Please <a href="https://visualgo.net/login"><u>login</u></a> if you are a repeat
 <div class='electure-next' data-nextid="3-7">Next <u>PgDn</u></div>
 </div>
 <div id="electure-3-7" class="electure-dialog" style="top:60px;left:60px;width:500px;">
-<p>The simpler data structure that can be used to implement Table ADT is <a href="./list"><u>Linked List</u></a>.</p><br><input class="mcq-answer" id="mcq-answer-16" value="70" hidden><p>Quiz: <b>Can we perform all basic three Table ADT operations: Search(v)/Insert(v)/Remove(v) efficiently (read: faster than O(<b>N</b>)) using Linked List?</b></p><form><input type="radio" name="mcq-16-choice" value="69"> Yes<br><input type="radio" name="mcq-16-choice" value="70"> No<br></form><button class="mcq-submit" id="submit-16">Submit</button> <span id="answer-status-16"></span><br><br><p>Discussion: Why?</p>
+<p>The simpler data structure that can be used to implement Table ADT is <a href="./list"><u>Linked List</u></a>.</p><br><input class="mcq-answer" id="mcq-answer-16" value="70" hidden><p>Quiz: <b>Can we perform all basic three Table ADT operations: Search(v)/Insert(v)/Remove(v) efficiently (read: faster than O(<b>N</b>)) using Linked List?</b></p><form><input type="radio" name="mcq-16-choice" value="70"> No<br><input type="radio" name="mcq-16-choice" value="69"> Yes<br></form><button class="mcq-submit" id="submit-16">Submit</button> <span id="answer-status-16"></span><br><br><p>Discussion: Why?</p>
 <div class='electure-end'>X <u>Esc</u></div>
 <div class='electure-prev' data-nextid="3-6">Prev <u>PgUp</u></div>
 <div class='electure-next' data-nextid="3-8">Next <u>PgDn</u></div>
@@ -421,7 +420,7 @@ Please <a href="https://visualgo.net/login"><u>login</u></a> if you are a repeat
 <div class='electure-next' data-nextid="9-2">Next <u>PgDn</u></div>
 </div>
 <div id="electure-9-2" class="electure-dialog" style="top:60px;left:60px;width:500px;">
-<input class="mcq-answer" id="mcq-answer-20" value="88" hidden><p>Quiz: <b>Inserting integers [1,10,2,9,3,8,4,7,5,6] one by one in that order into an initially empty BST will result in a BST of height:</b></p><form><input type="radio" name="mcq-20-choice" value="90"> The height cannot be determined<br><input type="radio" name="mcq-20-choice" value="88"> 9<br><input type="radio" name="mcq-20-choice" value="87"> 10<br><input type="radio" name="mcq-20-choice" value="89"> 8<br></form><button class="mcq-submit" id="submit-20">Submit</button> <span id="answer-status-20"></span><br><br><p>Pro-tip: You can use the &#39;Exploration mode&#39; to verify the answer.</p>
+<input class="mcq-answer" id="mcq-answer-20" value="88" hidden><p>Quiz: <b>Inserting integers [1,10,2,9,3,8,4,7,5,6] one by one in that order into an initially empty BST will result in a BST of height:</b></p><form><input type="radio" name="mcq-20-choice" value="87"> 10<br><input type="radio" name="mcq-20-choice" value="89"> 8<br><input type="radio" name="mcq-20-choice" value="88"> 9<br><input type="radio" name="mcq-20-choice" value="90"> The height cannot be determined<br></form><button class="mcq-submit" id="submit-20">Submit</button> <span id="answer-status-20"></span><br><br><p>Pro-tip: You can use the &#39;Exploration mode&#39; to verify the answer.</p>
 <div class='electure-end'>X <u>Esc</u></div>
 <div class='electure-prev' data-nextid="9-1">Prev <u>PgUp</u></div>
 <div class='electure-next' data-nextid="10">Next <u>PgDn</u></div>
@@ -513,7 +512,7 @@ Please <a href="https://visualgo.net/login"><u>login</u></a> if you are a repeat
 <div class='electure-next' data-nextid="13-4">Next <u>PgDn</u></div>
 </div>
 <div id="electure-13-4" class="electure-dialog" style="top:310px;left:50%;margin-left:-250px;width:500px;">
-<input class="msq-answer" id="msq-answer-18" value="73,75,77" hidden><p>Quiz: <b>What are the values of height(20), height(65), and height(41) on the BST above?</b></p><input type="checkbox" class="msq-choice" id="msq-18-choice-73"> height(41) = 3<br><input type="checkbox" class="msq-choice" id="msq-18-choice-74"> height(41) = 4<br><input type="checkbox" class="msq-choice" id="msq-18-choice-77"> height(20) = 2<br><input type="checkbox" class="msq-choice" id="msq-18-choice-75"> height(65) = 2<br><input type="checkbox" class="msq-choice" id="msq-18-choice-78"> height(20) = 3<br><input type="checkbox" class="msq-choice" id="msq-18-choice-76"> height(65) = 3<br><button class="msq-submit" id="submit-18">Submit</button> <span id="answer-status-18"></span>
+<input class="msq-answer" id="msq-answer-18" value="73,75,77" hidden><p>Quiz: <b>What are the values of height(20), height(65), and height(41) on the BST above?</b></p><input type="checkbox" class="msq-choice" id="msq-18-choice-76"> height(65) = 3<br><input type="checkbox" class="msq-choice" id="msq-18-choice-74"> height(41) = 4<br><input type="checkbox" class="msq-choice" id="msq-18-choice-77"> height(20) = 2<br><input type="checkbox" class="msq-choice" id="msq-18-choice-78"> height(20) = 3<br><input type="checkbox" class="msq-choice" id="msq-18-choice-73"> height(41) = 3<br><input type="checkbox" class="msq-choice" id="msq-18-choice-75"> height(65) = 2<br><button class="msq-submit" id="submit-18">Submit</button> <span id="answer-status-18"></span>
 <div class='electure-end'>X <u>Esc</u></div>
 <div class='electure-prev' data-nextid="13-3">Prev <u>PgUp</u></div>
 <div class='electure-next' data-nextid="13-5">Next <u>PgDn</u></div>
@@ -1000,7 +999,7 @@ This project is made possible by the generous <a href="http://www.cdtl.nus.edu.s
 <script src="https://visualgo.net/js/d3.min.js"></script>
 <script src="https://visualgo.net/js/viz-1.0.3.js"></script>
 <script src="https://visualgo.net/js/visualgo_print.js"></script>
-<script src="js/graph_library.js"></script>
+<script src="/js/graph_library.js"></script>
 <script>
       function runSlide(slide) {
         if (slide == '1') {
@@ -1680,7 +1679,7 @@ example(5);
       };
 
       function pushState(slideValue) {
-        var url = '/en/bst';
+        var url = '/bn/bst';
         if (typeof slideValue != 'undefined' && slideValue != null) url += '?slide=' + slideValue;
         window.history.pushState({slide: slideValue}, "slide " + slideValue, url);
       }
