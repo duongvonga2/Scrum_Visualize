@@ -4,6 +4,16 @@ html { overflow-y: scroll; }
 
 body { background: #eeeeee; font-family: "PT Sans"; font-size: 13px; }
 
+pre {
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;}
+	
+
+code {
+	font-family: Courier, 'New Courier', monospace;
+	font-size: 12px;}
 #top-bar {
 	height: 40px;
 	padding: 0px 30px;
@@ -118,6 +128,9 @@ body { background: #eeeeee; font-family: "PT Sans"; font-size: 13px; }
 			.overlays p { padding-top: 10px; font-size: 14px; }
 			.overlays a { text-decoration: underline; }
 			
+.computerGreen {
+	color: rgb(29, 122, 0);}	
+	
 @media (min-width: 320px) { /* 320-480px */
 
 }

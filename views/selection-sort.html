@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="https://visualgo.net/css/viz-1.0.1.css">
 <link rel="stylesheet" href="https://visualgo.net/css/visual.css">
 <link rel="stylesheet" href="https://visualgo.net/css/drawgraph.css">
+<link rel="stylesheet" href="./css/common.css">
 <style>
       #e-lecture {
         top: 45px;
@@ -742,6 +743,7 @@ Please <a href="https://visualgo.net/login"><u>login</u></a> if you are a repeat
     </div>
     <div style="float: left; padding-left: 3rem; padding-right: 3rem; width: 50%; ">
       <div style="overflow: auto; height: 250px;">
+<<<<<<< HEAD
         <span style="color: white; display: block; background-color: rgb(75, 101, 186);">Code</span>
       <code>
         void swap(int *xp, int *yp) { <br>
@@ -767,6 +769,28 @@ Please <a href="https://visualgo.net/login"><u>login</u></a> if you are a repeat
           } <br>
 
       </code>
+=======
+        <h4 style="color: red;">Code</h4>
+      <pre><code class = "computerGreen">
+void selectionSort(int arr[], int n) 
+{ 
+    int i, j, min_idx; 
+  
+    // One by one move boundary of unsorted subarray 
+    for (i = 0; i < n-1; i++) 
+    { 
+        // Find the minimum element in unsorted array 
+        min_idx = i; 
+        for (j = i+1; j < n; j++) 
+          if (arr[j] < arr[min_idx]) 
+            min_idx = j; 
+  
+        // Swap the found minimum element with the first element 
+        swap(&arr[min_idx], &arr[i]); 
+    } 
+} 
+      </code></pre>
+>>>>>>> dc87bbc3a056653f6c64c2f03f6d78fda9ed49f4
     </div>
     </div>
     
