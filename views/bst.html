@@ -81,7 +81,7 @@
 <body>
 <div id="top-bar">
 <a href="http://www.comp.nus.edu.sg/~stevenha"><span class="colour" style="border: 1px solid green; border-radius: 25px;">7</span></a>&nbsp;&nbsp;&nbsp;
-<a id="home" href="/">X-<span class="colour">Men</span><span style="font-size: 40%"></span></a>
+<a id="home" href="../index.html">X-<span class="colour">Men</span><span style="font-size: 40%"></span></a>
 
 <!-- <select id="Language" onchange="changeURL()">
 <option value="en" selected>en</option>
@@ -136,8 +136,8 @@
 </div>
 <div id='viz'>
   <div class="container jumbotron">
-    <div class="row" style="padding-left: 3rem; text-align: left; padding-right: 3rem;">
-      <div class="col-6" >
+    <div class="row" style="display: flex; padding-left: 3rem; text-align: left; padding-right: 3rem;">
+      <div class="col-6" style="float: left; padding-left: 1rem; padding-right: 1rem;" >
         <h4 style="color: red;">Advantages</h4>
         - We can always keep the cost of insert(), delete(), lookup() to O(logN)
         where N is the number of nodes in the tree. <br>
@@ -145,7 +145,7 @@
         - We can implement order statistics with binary search tree - Nth smallest, Nth largest element. 
         This is because it is possible to look at the data structure as a sorted array. <br>
       </div>
-      <div class="col-6">
+      <div class="col-6" style="float: left; padding-left: 1rem; padding-right: 1rem;">
         <h4 style="color: red;">Disadvantages</h4>
         - The main disadvantage is that we should always implement a balanced binary search tree - AVL tree, Red-Black tree, Splay tree. 
         Otherwise the cost of operations may not be logarithmic and degenerate into a linear search on an array. <br>
