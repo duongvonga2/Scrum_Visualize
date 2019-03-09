@@ -81,9 +81,9 @@
 <body>
 <div id="top-bar">
 <a href="http://www.comp.nus.edu.sg/~stevenha"><span class="colour" style="border: 1px solid green; border-radius: 25px;">7</span></a>&nbsp;&nbsp;&nbsp;
-<a id="home" href="/">Visu<span class="colour">Algo</span><span style="font-size: 40%">.net</span></a>
-/
-<select id="Language" onchange="changeURL()">
+<a id="home" href="/">X-<span class="colour">Men</span><span style="font-size: 40%"></span></a>
+
+<!-- <select id="Language" onchange="changeURL()">
 <option value="en" selected>en</option>
 <option value="zh">zh</option>
 <option value="es">es</option>
@@ -95,17 +95,17 @@
 <option value="ja">ja</option>
 <option value="ko">ko</option>
 <option value="vi">vi</option>
-</select>
+</select> -->
 /bst
-<span class="right-links" id="useraccount">Login</span>
+<!-- <span class="right-links" id="useraccount">Login</span> -->
 <span id="title">
 <a id='title-BST' class='selected-viz'>Binary Search Tree</a>
-<a id='title-AVL'>AVL Tree</a>
+<!-- <a id='title-AVL'>AVL Tree</a> -->
 </span>
-<div id="mode-menu">
+<!-- <div id="mode-menu">
 <div id='mode-button' title='exploration'>Exploration Mode &#9663;</div>
 <div id='other-modes'>
-<a title='e-Lecture'>e-Lecture Mode</a>
+<a title='e-Lecture'>e-Lecture Mode</a -->>
 </div>
 </div>
 </div>
@@ -134,7 +134,26 @@
 <span id="go-to-end" class="media-control-button" title="go to end" onclick=goToEnd()><img src="https://visualgo.net/img/goToEnd.png" alt="go to end"></span>
 <div id="progress-bar" class="media-control-button"></div>
 </div>
-<div id='viz'></div>
+<div id='viz'>
+  <div class="container jumbotron">
+    <div class="row" style="padding-left: 3rem; text-align: left; padding-right: 3rem;">
+      <div class="col-6" >
+        <h4 style="color: red;">Advantages</h4>
+        - We can always keep the cost of insert(), delete(), lookup() to O(logN)
+        where N is the number of nodes in the tree. <br>
+        - We have an ordering of keys stored in the tree.<br>
+        - We can implement order statistics with binary search tree - Nth smallest, Nth largest element. 
+        This is because it is possible to look at the data structure as a sorted array. <br>
+      </div>
+      <div class="col-6">
+        <h4 style="color: red;">Disadvantages</h4>
+        - The main disadvantage is that we should always implement a balanced binary search tree - AVL tree, Red-Black tree, Splay tree. 
+        Otherwise the cost of operations may not be logarithmic and degenerate into a linear search on an array. <br>
+      </div>
+    </div>
+  </div>
+
+</div>
 <div id='current-action' class='panel'></div>
 <div id='e-lecture' class='panel'></div>
 <div id="overlay" hidden></div>
