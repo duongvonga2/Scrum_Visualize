@@ -88,20 +88,6 @@
 <div id="top-bar">
 <!-- <a href="http://www.comp.nus.edu.sg/~stevenha"><span class="colour" style="border: 1px solid green; border-radius: 25px;">7</span></a>&nbsp;&nbsp;&nbsp; -->
 <a id="home" href="../index.html">X-<span class="colour">MEN</span><span style="font-size: 40%"></span></a>
-
-<!-- <select id="Language" onchange="changeURL()">
-<option value="en" selected>en</option>
-<option value="zh">zh</option>
-<option value="es">es</option>
-<option value="pt">pt</option>
-<option value="ru">ru</option>
-<option value="id">id</option>
-<option value="de">de</option>
-<option value="bn">bn</option>
-<option value="ja">ja</option>
-<option value="ko">ko</option>
-<option value="vi">vi</option>
-</select> -->
 /BST
 <!-- <span class="right-links" id="useraccount">Login</span> -->
 <span id="title">
@@ -150,15 +136,15 @@
       <div class="col-6" style="float: left; padding-left: 1rem; padding-right: 1rem; width: 50%; font-size:1rem;" >
         <span style="color: white; display: block; background-color: rgb(75, 101, 186);"><font size ="5">Advantages</font></span>
         <br>
-        We can always keep the cost of insert(), delete(), lookup() to O(logN)
+        - We can always keep the cost of insert(), delete(), lookup() to O(logN)
         where N is the number of nodes in the tree. <br>
-        We have an ordering of keys stored in the tree.<br>
-        We can implement order statistics with binary search tree - Nth smallest, Nth largest element. 
+        - We have an ordering of keys stored in the tree.<br>
+        - We can implement order statistics with binary search tree - Nth smallest, Nth largest element. 
         This is because it is possible to look at the data structure as a sorted array. <br>
       </div>
       <div class="col-6" style="float: left; padding-left: 1rem; padding-right: 1rem; width: 50%;font-size:1rem;">
         <span style="color: white; display: block; background-color: rgb(75, 101, 186);"><font size ="5">Disadvantages</font></span>
-        <br>The main disadvantage is that we should always implement a balanced binary search tree - AVL tree, Red-Black tree, Splay tree. 
+        <br>- The main disadvantage is that we should always implement a balanced binary search tree - AVL tree, Red-Black tree, Splay tree. 
         Otherwise the cost of operations may not be logarithmic and degenerate into a linear search on an array. <br>
       </div>
     </div>
