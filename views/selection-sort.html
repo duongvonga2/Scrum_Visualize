@@ -8,7 +8,7 @@
 <meta name="csrf-token" content="prEI9fBWgzqUM3TQdRBZOmJ9xfIxhFSbdjPeDBMO">
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
 <meta property="og:image" content="https://visualgo.net/img/png/sorting.png">
-<title>X-MEN SELECTION SORT</title>
+<title>VisuAlgo - Sorting (Bubble, Selection, Insertion, Merge, Quick, Counting, Radix)</title>
 <link rel="icon" href="https://visualgo.net/img/favicon.png" type="image/x-icon">
 <link rel="shortcut icon" href="https://visualgo.net/img/favicon.png" type="image/x-icon">
 <link rel="apple-touch-icon" href="https://visualgo.net/img/favicon.png">
@@ -133,7 +133,7 @@ div .radix-sort-element {
 </head>
 <body>
 <div id="top-bar">
-<!-- <a href="http://www.comp.nus.edu.sg/~stevenha"><span class="colour" style="border: 1px solid green; border-radius: 25px;">7</span></a>&nbsp;&nbsp;&nbsp; -->
+<a href="http://www.comp.nus.edu.sg/~stevenha"><span class="colour" style="border: 1px solid green; border-radius: 25px;">7</span></a>&nbsp;&nbsp;&nbsp;
 <a id="home" href="../index.html">X-<span class="colour">MEN</span><span style="font-size: 40%"></span></a>
 /
 <!-- <select id="Language" onchange="changeURL()">
@@ -152,9 +152,8 @@ div .radix-sort-element {
 SELECTION-SORT
 <!-- <span class="right-links" id="useraccount">Login</span> -->
 <span id="title">
-
-<a id='title-BST' href="link_list.html" >Linked-list</a>
 <a id='title-BST' href="bst.html" >Binary Search Tree</a>
+<a id='title-BST' href="linked_list/list.html" >Linked-list</a>
 <a id='title-Bubble' href="bubble-sort.html">Bubble sort</a>
 <a id='title-Selection' href="selection-sort.html" class="selected-viz">Select sort</a>
 <!-- <a id='title-Insertion'>Insert</a>
@@ -725,17 +724,18 @@ Please <a href="https://visualgo.net/login"><u>login</u></a> if you are a repeat
 </div>
 <div id="sort-viz">
 
-<div class="container" style="display: flex; text-align: left; margin-bottom: 1rem; padding-right: 3rem; padding-left: 3rem;">
-    <div class="row" style="float: left; padding-left: 1rem; padding-right: 1rem; width: 50%;">
+<div class="container" style="display: flex; text-align: left; margin-bottom: 1rem;">
+    <div class="row" style="float: left; padding-left: 3rem; padding-right: 3rem; width: 50%;">
       <div class="col-6">
-            <span style="color: white; display: block; background-color: rgb(75, 101, 186);">Advantages</span>
-            The main advantage of the insertion sort is its simplicity. 
+            <span style="color: white; display: block; background-color: rgb(75, 101, 186);"><font size ="5">Advantages</font></span>
+           <br> The main advantage of the insertion sort is its simplicity. 
             It also exhibits a good performance when dealing with a small list.
             The insertion sort is an in-place sorting algorithm so the space requirement is minimal.
         </div>
           <div class="col-6">
-            <span style="color: white; display: block; background-color: rgb(75, 101, 186);">Disadvantages</span>
-            The disadvantage of the insertion sort is that it does not perform as well as other,
+            <br>
+            <span style="color: white; display: block; background-color: rgb(75, 101, 186);"><font size ="5">Disadvantages</font></span>
+            <br>The disadvantage of the insertion sort is that it does not perform as well as other,
             better sorting algorithms.
             With n-squared steps required for every n element to be sorted,
             the insertion sort does not deal well with a huge list. 
@@ -743,10 +743,9 @@ Please <a href="https://visualgo.net/login"><u>login</u></a> if you are a repeat
           </div>
     </div>
     <div style="float: left; padding-left: 3rem; padding-right: 3rem; width: 50%; ">
-      <span style="color: white; display: block; background-color: rgb(75, 101, 186);">Code</span>
       <div style="overflow: auto; height: 250px;">
 
-        
+        <span style="color: white; display: block; background-color: rgb(75, 101, 186);"><font size ="5">Code</font></span>
       
       <pre style="margin-top: 0px !important;" ><code class = "computerGreen" ">
 void selectionSort(int arr[], int n) 
@@ -819,9 +818,9 @@ void selectionSort(int arr[], int n)
 </div>
 </div>
 <div id="bottom-bar">
-<!-- <a id="trigger-about">About</a>
+<a id="trigger-about">About</a>
 <a id="trigger-team">Team</a>
-<a id="trigger-terms">Terms of use</a> -->
+<!-- <a id="trigger-terms">Terms of use</a> -->
 </div>
 <div id="about" class="overlays">
 <h4>About</h4><span class='close-overlay'>&#x2715;</span>

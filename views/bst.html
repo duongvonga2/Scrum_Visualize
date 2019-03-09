@@ -147,17 +147,18 @@
 <div id='viz'>
   <div class="container jumbotron">
     <div class="row" style="display: flex; padding-left: 3rem; text-align: left; padding-right: 3rem; ">
-      <div class="col-6" style="float: left; padding-left: 1rem; padding-right: 1rem; width: 50%" >
-        <span style="color: white; display: block; background-color: rgb(75, 101, 186);">Advantages</span>
-        - We can always keep the cost of insert(), delete(), lookup() to O(logN)
+      <div class="col-6" style="float: left; padding-left: 1rem; padding-right: 1rem; width: 50%; font-size:1rem;" >
+        <span style="color: white; display: block; background-color: rgb(75, 101, 186);"><font size ="5">Advantages</font></span>
+        <br>
+        We can always keep the cost of insert(), delete(), lookup() to O(logN)
         where N is the number of nodes in the tree. <br>
-        - We have an ordering of keys stored in the tree.<br>
-        - We can implement order statistics with binary search tree - Nth smallest, Nth largest element. 
+        We have an ordering of keys stored in the tree.<br>
+        We can implement order statistics with binary search tree - Nth smallest, Nth largest element. 
         This is because it is possible to look at the data structure as a sorted array. <br>
       </div>
-      <div class="col-6" style="float: left; padding-left: 1rem; padding-right: 1rem; width: 50%">
-        <span style="color: white; display: block; background-color: rgb(75, 101, 186);">Disadvantages</span>
-        - The main disadvantage is that we should always implement a balanced binary search tree - AVL tree, Red-Black tree, Splay tree. 
+      <div class="col-6" style="float: left; padding-left: 1rem; padding-right: 1rem; width: 50%;font-size:1rem;">
+        <span style="color: white; display: block; background-color: rgb(75, 101, 186);"><font size ="5">Disadvantages</font></span>
+        <br>The main disadvantage is that we should always implement a balanced binary search tree - AVL tree, Red-Black tree, Splay tree. 
         Otherwise the cost of operations may not be logarithmic and degenerate into a linear search on an array. <br>
       </div>
     </div>
