@@ -112,14 +112,14 @@ div .radix-sort-element {
   overflow: hidden;
   padding-top: 10px;
 }
-<style type="text/css">
+
     a{
         text-decoration-line: none !important;
     }
     a:hover{
         color: white !important;
     }
-</style>
+
 </style>
 <script>
       function changeURL() {
@@ -148,13 +148,13 @@ div .radix-sort-element {
 <option value="ko">ko</option>
 <option value="vi">vi</option>
  -->
-BUBBLE-SORT
+SELECTION-SORT
 <!-- <span class="right-links" id="useraccount">Login</span> -->
 <span id="title">
 <a id='title-BST' href="bst.html" >Binary Search Tree</a>
 <a id='title-BST' href="linked_list/list.html" >Linked-list</a>
-<a id='title-Bubble' href="bubble-sort.html">Bubble</a>
-<a id='title-Selection' href="selection-sort.html" class="selected-viz">Select</a>
+<a id='title-Bubble' href="bubble-sort.html">Bubble sort</a>
+<a id='title-Selection' href="selection-sort.html" class="selected-viz">Select sort</a>
 <!-- <a id='title-Insertion'>Insert</a>
 <a id='title-Merge'>Merge</a>
 <a id='title-Quick'>Quick</a>
@@ -742,26 +742,30 @@ Please <a href="https://visualgo.net/login"><u>login</u></a> if you are a repeat
     </div>
     <div style="float: left; padding-left: 3rem; padding-right: 3rem; width: 50%; ">
       <div style="overflow: auto; height: 250px;">
-        <h4 style="color: red;">Code</h4>
+        <span style="color: white; display: block; background-color: rgb(75, 101, 186);">Code</span>
       <code>
-        void swap(int *xp, int *yp) <br>
-        { <br>
+        void swap(int *xp, int *yp) { <br>
           int temp = *xp; <br>
           *xp = *yp; <br>
-          *yp = temp; <br>
+          *yp = temp;<br>
         } <br>
+  
+        void selectionSort(int arr[], int n) { <br>
+          int i, j, min_idx; <br>
+  
+          // One by one move boundary of unsorted subarray <br>
+          for (i = 0; i < n-1; i++) { <br>
+          // Find the minimum element in unsorted array <br>
+            min_idx = i; <br>
+            for (j = i+1; j < n; j++) <br>
+              if (arr[j] < arr[min_idx]) <br>
+                min_idx = j; <br>
+  
+            // Swap the found minimum element with the first element <br>
+            swap(&arr[min_idx], &arr[i]); <br>
+            } <br>
+          } <br>
 
-        // A function to implement bubble sort <br>
-        void bubbleSort(int arr[], int n) <br>
-        { <br>
-          int i, j; <br>
-          for (i = 0; i < n-1; i++) <br> 
-
-          // Last i elements are already in place <br>
-          for (j = 0; j < n-i-1; j++) <br>
-          if (arr[j] > arr[j+1]) <br>
-          swap(&arr[j], &arr[j+1]); <br>
-        } <br>
       </code>
     </div>
     </div>
@@ -4191,8 +4195,8 @@ const DEFAULT_RADIX_DATA = "3221, 1, 10, 9680, 577, 9420, 7, 5622, 4793, 2030, 3
 
 // title changing
 function AbbreviateTitle() {
-  $('#title-Bubble').text("BUB").attr('title', 'Bubble Sort');
-  $('#title-Selection').text("SEL").attr('title', 'Selection Sort');
+  $('#title-Bubble').text("BUBBLE SORT").attr('title', 'Bubble Sort');
+  $('#title-Selection').text("SELECTION SORT").attr('title', 'Selection Sort');
   $('#title-Insertion').text("INS").attr('title', 'Insertion Sort');
   $('#title-Merge').text("MER").attr('title', 'Merge Sort');
   $('#title-Quick').text("QUI").attr('title', 'Quick Sort');

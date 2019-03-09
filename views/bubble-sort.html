@@ -20,38 +20,37 @@
 <link rel="stylesheet" href="https://visualgo.net/css/visual.css">
 <link rel="stylesheet" href="https://visualgo.net/css/drawgraph.css">
 <style>
-      #e-lecture {
-        top: 45px;
-        right: 130px;
-        width: 400px;
-        display: block;
-        background: none;
-        /*overflow: normal;*/
-        white-space: normal;
-        text-align: right;
-        color: black; font-weight: bold; font-size: 20px;
-      }
-      .electure-prev, .electure-next { /* force update, copied from viz.css */
-        position: absolute;
-        /* bottom: -12px; */
-        top: -20px;
-        /*bottom: '';*/
-        padding: 3px 8px;
-        background: #999;
-        color: white;
-        cursor: pointer;
-        border-radius: 2px;
-      }
-      .electure-prev {
-        left: -10px;
-        /* right: 30px; */
-      }
-      .electure-next {
-        right: -10px;
-        color: white;
-      }
-    </style>
-<style>
+#e-lecture {
+  top: 45px;
+  right: 130px;
+  width: 400px;
+  display: block;
+  background: none;
+  /*overflow: normal;*/
+  white-space: normal;
+  text-align: right;
+  color: black; font-weight: bold; font-size: 20px;
+}
+.electure-prev, .electure-next { /* force update, copied from viz.css */
+  position: absolute;
+  /* bottom: -12px; */
+  top: -20px;
+  /*bottom: '';*/
+  padding: 3px 8px;
+  background: #999;
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.electure-prev {
+  left: -10px;
+  /* right: 30px; */
+}
+.electure-next {
+  right: -10px;
+  color: white;
+}
+
 .execAction { padding: 5px 8px; }
 .err { padding: 5px 0px; }
 #actions-extras input {
@@ -112,14 +111,13 @@ div .radix-sort-element {
   overflow: hidden;
   padding-top: 10px;
 }
-<style type="text/css">
-    a{
-        text-decoration-line: none !important;
-    }
-    a:hover{
-        color: white !important;
-    }
-</style>
+
+a{
+    text-decoration-line: none !important;
+}
+a:hover{
+    color: white !important;
+}
 </style>
 <script>
       function changeURL() {
@@ -153,7 +151,8 @@ BUBBLE-SORT
 <span id="title">
 <a id='title-BST' href="bst.html" >Binary Search Tree</a>
 <a id='title-BST' href="linked_list/list.html" >Linked-list</a>
-<a id='title-Bubble' href="bubble-sort.html" class='selected-viz'>Bubble</a>
+<a id='title-Bubble' href="bubble-sort.html" class='selected-viz'>Bubble sort</a>
+<a id='title-Selection' href="selection-sort.html">Selection sort</a>
 <!-- <a id='title-Selection'>Select</a>
 <a id='title-Insertion'>Insert</a>
 <a id='title-Merge'>Merge</a>
@@ -162,12 +161,12 @@ BUBBLE-SORT
 <a id='title-Counting'>Count</a>
 <a id='title-Radix'>Radix</a> -->
 </span>
-<div id="mode-menu">
+<!-- <div id="mode-menu"> -->
 <!-- <div id='mode-button' title='exploration'>Exploration Mode &#9663;</div> -->
-<div id='other-modes'>
+<!-- <div id='other-modes'> -->
 <!-- <a title='e-Lecture'>e-Lecture Mode</a> -->
-</div>
-</div>
+<!-- </div> -->
+<!-- </div> -->
 </div>
 <div id="dark-overlay"></div>
 <div id="status" class="panel"><p></p></div>
@@ -726,21 +725,21 @@ Please <a href="https://visualgo.net/login"><u>login</u></a> if you are a repeat
 <div class="container" style="display: flex; text-align: left; margin-bottom: 1rem;">
     <div class="row" style="float: left; padding-left: 3rem; padding-right: 3rem; width: 50%;">
       <div class="col-6">
-            <h4 style="color: red;">Advantages</h4>
+            <span style="color: white; display: block; background-color: rgb(75, 101, 186);">Advantages</span>
             Easy to understand.
             Easy to implement.
             In-place, no external memory is needed.
           Performs greatly when the array is almost sorted.
         </div>
           <div class="col-6">
-            <h4 style="color: red;">Disadvantages</h4>
+            <span style="color: white; display: block; background-color: rgb(75, 101, 186);">Disadvantages</span>
             Very expensive, O(n2)in worst case and average case.
             It does more element assignments than its counterpart, insertion sort.
           </div>
     </div>
     <div style="float: left; padding-left: 3rem; padding-right: 3rem; width: 50%; ">
       <div style="overflow: auto; height: 250px;">
-        <h4 style="color: red;">Code</h4>
+        <span style="color: white; display: block; background-color: rgb(75, 101, 186);">Code</span>
       <code>
         void swap(int *xp, int *yp) <br>
         { <br>
@@ -4189,8 +4188,8 @@ const DEFAULT_RADIX_DATA = "3221, 1, 10, 9680, 577, 9420, 7, 5622, 4793, 2030, 3
 
 // title changing
 function AbbreviateTitle() {
-  $('#title-Bubble').text("BUB").attr('title', 'Bubble Sort');
-  $('#title-Selection').text("SEL").attr('title', 'Selection Sort');
+  $('#title-Bubble').text("BUBBLE SORT").attr('title', 'Bubble Sort');
+  $('#title-Selection').text("SELECTION SORT").attr('title', 'Selection Sort');
   $('#title-Insertion').text("INS").attr('title', 'Insertion Sort');
   $('#title-Merge').text("MER").attr('title', 'Merge Sort');
   $('#title-Quick').text("QUI").attr('title', 'Quick Sort');

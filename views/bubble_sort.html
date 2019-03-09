@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bubble Sort</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+  <!-- <div class="jumbotron text-center" style="margin-bottom:0"></div> -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="../index.html">Xmen</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="./selection_sort.html">Selection Sort</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./bubble_sort.html">Buble Sort</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./linked_list/list.html">Link List</a>
+      </li>    
+      <li class="nav-item">
+        <a class="nav-link" href="./bst.html">Binary Search Tree</a>
+      </li>  
+    </ul>
+  </div>  
+</nav>
+<div class="container text-center">
+  <h1>BUBBLE SORT</h1>
+</div>
+<hr>
+<div class="container mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <form action="" class="fomr-group mb-5">
+          <label for="num" class="fomr-control">Number</label>
+          <input type="text" class="form-control" style="width: 50%;">
+          <button class="btn btn-info mt-1">SUBMIT</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h5>YOUR NUMBERS YOU INPUT</h5>
+        <code>[1 , 2 , 3 , 4]</code>
+        <form action="" class="fomr-group mb-5">
+          <button class="btn btn-success mt-1">GENERATE</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container jumbotron jumbotron-dark">
+    <!-- todo demo -->
+  <svg id="viz-canvas" height="490" width="1000"><g transform="translate(125,216.1999969482422)"><rect height="13.799999999999999" width="45" style="fill: rgb(173, 216, 230);"></rect><text dy=".35em" x="22.5" y="-15">3</text></g><g transform="translate(175,27.600000381469727)"><rect height="202.4" width="45" style="fill: rgb(173, 216, 230);"></rect><text dy=".35em" x="22.5" y="187.4">44</text></g><g transform="translate(225,55.20000076293945)"><rect height="174.8" width="45" style="fill: rgb(173, 216, 230);"></rect><text dy=".35em" x="22.5" y="159.8">38</text></g><g transform="translate(275,207)"><rect height="23" width="45" style="fill: rgb(173, 216, 230);"></rect><text dy=".35em" x="22.5" y="-15">5</text></g><g transform="translate(325,13.800000190734863)"><rect height="216.2" width="45" style="fill: rgb(173, 216, 230);"></rect><text dy=".35em" x="22.5" y="201.2">47</text></g><g transform="translate(375, 161)"><rect height="69" width="45" style="fill: rgb(173, 216, 230);"></rect><text dy=".35em" x="22.5" y="54">15</text></g><g transform="translate(425, 64.4)"><rect height="165.6" width="45" style="fill: rgb(173, 216, 230);"></rect><text dy=".35em" x="22.5" y="150.6">36</text></g><g transform="translate(475, 110.39999999999999)"><rect height="119.60000000000001" width="45" style="fill: rgb(173, 216, 230);"></rect><text dy=".35em" x="22.5" y="104.60000000000001">26</text></g><g transform="translate(525, 105.8)"><rect height="124.2" width="45" style="fill: rgb(173, 216, 230);"></rect><text dy=".35em" x="22.5" y="109.2">27</text></g><g transform="translate(575, 220.8)"><rect height="9.200000000000001" width="45" style="fill: rgb(173, 216, 230);"></rect><text dy=".35em" x="22.5" y="-15">2</text></g><g transform="translate(625, 18.399999999999977)"><rect height="211.60000000000002" width="45" style="fill: rgb(173, 216, 230);"></rect><text dy=".35em" x="22.5" y="196.60000000000002">46</text></g><g transform="translate(675, 211.6)"><rect height="18.400000000000002" width="45" style="fill: rgb(173, 216, 230);"></rect><text dy=".35em" x="22.5" y="-15">4</text></g><g transform="translate(725, 142.6)"><rect height="87.4" width="45" style="fill: rgb(173, 216, 230);"></rect><text dy=".35em" x="22.5" y="72.4">19</text></g><g transform="translate(775, 0)"><rect height="230" width="45" style="fill: rgb(173, 216, 230);"></rect><text dy=".35em" x="22.5" y="215">50</text></g><g transform="translate(825, 9.200000000000017)"><rect height="220.79999999999998" width="45" style="fill: rgb(173, 216, 230);"></rect><text dy=".35em" x="22.5" y="205.79999999999998">48</text></g></svg>
+  </div>
+  
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <!-- ADVANTAGE & DISAVANTAGE -->
+      <div class="container jumbotron">
+        <div class="row">
+          <div class="col-6">
+            <h4 style="color: red;">Advantages</h4>
+            Easy to understand.
+            Easy to implement.
+            In-place, no external memory is needed.
+          Performs greatly when the array is almost sorted.
+        </div>
+          <div class="col-6">
+            <h4 style="color: red;">Disadvantages</h4>
+            Very expensive, O(n2)in worst case and average case.
+            It does more element assignments than its counterpart, insertion sort.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 jumbotron">
+      <!-- SOURCE CODE -->
+      <h4 style="color: red;">Code</h4>
+      <code>
+        void swap(int *xp, int *yp) <br>
+        { <br>
+          int temp = *xp; <br>
+          *xp = *yp; <br>
+          *yp = temp; <br>
+        } <br>
+
+        // A function to implement bubble sort <br>
+        void bubbleSort(int arr[], int n) <br>
+        { <br>
+          int i, j; <br>
+          for (i = 0; i < n-1; i++) <br> 
+
+          // Last i elements are already in place <br>
+          for (j = 0; j < n-i-1; j++) <br>
+          if (arr[j] > arr[j+1]) <br>
+          swap(&arr[j], &arr[j+1]); <br>
+        } <br>
+      </code>
+    </div>
+  </div>         
+</div>
+
+
+<script type="text/javascript" src="jquery1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+    
