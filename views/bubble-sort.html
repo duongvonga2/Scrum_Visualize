@@ -125,9 +125,9 @@ div .radix-sort-element {
 <body>
 <div id="top-bar">
 <a href="http://www.comp.nus.edu.sg/~stevenha"><span class="colour" style="border: 1px solid green; border-radius: 25px;">7</span></a>&nbsp;&nbsp;&nbsp;
-<a id="home" href="/">Visu<span class="colour">Algo</span><span style="font-size: 40%">.net</span></a>
+<a id="home" href="/">X-<span class="colour">MEN</span><span style="font-size: 40%"></span></a>
 /
-<select id="Language" onchange="changeURL()">
+<!-- <select id="Language" onchange="changeURL()">
 <option value="en">en</option>
 <option value="zh">zh</option>
 <option value="es">es</option>
@@ -139,18 +139,18 @@ div .radix-sort-element {
 <option value="ja">ja</option>
 <option value="ko">ko</option>
 <option value="vi">vi</option>
-</select>
-/sorting
-<span class="right-links" id="useraccount">Login</span>
+ -->
+sorting
+<!-- <span class="right-links" id="useraccount">Login</span> -->
 <span id="title">
 <a id='title-Bubble' class='selected-viz'>Bubble</a>
-<a id='title-Selection'>Select</a>
+<!-- <a id='title-Selection'>Select</a>
 <a id='title-Insertion'>Insert</a>
 <a id='title-Merge'>Merge</a>
 <a id='title-Quick'>Quick</a>
 <a id='title-RandomizedQuick'>R-Quick</a>
 <a id='title-Counting'>Count</a>
-<a id='title-Radix'>Radix</a>
+<a id='title-Radix'>Radix</a> -->
 </span>
 <div id="mode-menu">
 <div id='mode-button' title='exploration'>Exploration Mode &#9663;</div>
@@ -712,6 +712,27 @@ Please <a href="https://visualgo.net/login"><u>login</u></a> if you are a repeat
 <span id="hide-popup" hidden>X <u>Close</u></span>
 </div>
 <div id="sort-viz">
+
+<div class="container" style="display: flex;">
+    <div class="row" style="float: left; padding-left: 3rem; padding-right: 3rem;">
+      <div class="col-6">
+            <h4 style="color: red;">Advantages</h4>
+            Easy to understand.
+            Easy to implement.
+            In-place, no external memory is needed.
+          Performs greatly when the array is almost sorted.
+        </div>
+          <div class="col-6">
+            <h4 style="color: red;">Disadvantages</h4>
+            Very expensive, O(n2)in worst case and average case.
+            It does more element assignments than its counterpart, insertion sort.
+          </div>
+    </div>
+    <div style="float: left; padding-left: 3rem; padding-right: 3rem">
+        
+    </div>
+</div>
+
 <svg id="viz-canvas"></svg><br>
 <svg id="viz-counting-sort-secondary-canvas"></svg>
 <div id="viz-radix-sort-canvas">
@@ -738,22 +759,22 @@ Please <a href="https://visualgo.net/login"><u>login</u></a> if you are a repeat
 <div id="actions-extras">
 <div class="create action-menu-pullout">
 <div id="create-random" class="execAction new-menu-option coloured-menu-option" onclick="createList('random')"><p>Random</p></div>
-<div id="create-sorted" class="execAction new-menu-option coloured-menu-option" onclick="triggerSubmenu('sorted')">
-<p>Sorted</p>
-<div id="create-sorted-increasing" class="execAction coloured-menu-option" onclick="createList('sorted-increasing')"><p>Increasing</p></div>
-<div id="create-sorted-decreasing" class="execAction new-menu-option coloured-menu-option" onclick="createList('sorted-decreasing')"><p>Decreasing</p></div>
-</div>
-<div id="create-nearly-sorted" class="execAction new-menu-option coloured-menu-option" onclick="triggerSubmenu('nearly-sorted')">
-<p>Nearly sorted</p>
-<div id="create-nearly-sorted-increasing" class="execAction coloured-menu-option" onclick="createList('nearly-sorted-increasing')"><p>Increasing</p></div>
-<div id="create-nearly-sorted-decreasing" class="execAction new-menu-option coloured-menu-option" onclick="createList('nearly-sorted-decreasing')"><p>Decreasing</p></div>
-</div>
+<!-- <div id="create-sorted" class="execAction new-menu-option coloured-menu-option" onclick="triggerSubmenu('sorted')">
+  <p>Sorted</p>
+  <div id="create-sorted-increasing" class="execAction coloured-menu-option" onclick="createList('sorted-increasing')"><p>Increasing</p></div>
+  <div id="create-sorted-decreasing" class="execAction new-menu-option coloured-menu-option" onclick="createList('sorted-decreasing')"><p>Decreasing</p></div>
+</div> -->
+<!-- <div id="create-nearly-sorted" class="execAction new-menu-option coloured-menu-option" onclick="triggerSubmenu('nearly-sorted')">
+  <p>Nearly sorted</p>
+  <div id="create-nearly-sorted-increasing" class="execAction coloured-menu-option" onclick="createList('nearly-sorted-increasing')"><p>Increasing</p></div>
+  <div id="create-nearly-sorted-decreasing" class="execAction new-menu-option coloured-menu-option" onclick="createList('nearly-sorted-decreasing')"><p>  Decreasing</p></div>
+</div> -->
 <div id="create-userdefined-input" class="new-menu-option"><input type="text" id="userdefined-input" title="Enter a list of numbers, separated by commas." autocomplete="off" value="3,44,38,5,47,15,36,26,27,2,46,4,19,50,48"></div>
 <div id="create-userdefined-go" class="execAction new-menu-option coloured-menu-option" onclick="createList('userdefined')"><p>Go</p></div>
 <div id="create-err" class="err"></div>
 </div>
 <div class="sort action-menu-pullout">
-<div id="sort-bubble-merge-inversion" class="execAction new-menu-option coloured-menu-option"><input type="checkbox" id="sort-bubble-merge-inversion-checkbox">&nbsp;Compute Inversion Index</div>
+<!-- <div id="sort-bubble-merge-inversion" class="execAction new-menu-option coloured-menu-option"><input type="checkbox" id="sort-bubble-merge-inversion-checkbox">&nbsp;Compute Inversion Index</div> -->
 <div id="sort-go" class="execAction new-menu-option coloured-menu-option" onclick="sort()"><p>Go</p></div>
 <div id="sort-err" class="err"></div>
 </div>
@@ -4080,7 +4101,7 @@ $(function() {
   AbbreviateTitle();
   hideAllSubmenus();
   var eight_modes = ["Bubble", "Selection", "Insertion", "Merge", "Quick", "RandomizedQuick", "Counting", "Radix"];
-  $('#title-'+eight_modes[Math.floor(Math.random()*8)]).click(); // randomly open one of the eight sorting algorithm mode every time
+  $('#title-'+"Bubble").click(); // randomly open one of the eight sorting algorithm mode every time
   $('#play').hide();
 
   d3.selectAll("#radix-sort-bucket-labels-collection span")
