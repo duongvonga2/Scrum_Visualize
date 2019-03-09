@@ -112,6 +112,14 @@ div .radix-sort-element {
   overflow: hidden;
   padding-top: 10px;
 }
+<style type="text/css">
+    a{
+        text-decoration-line: none !important;
+    }
+    a:hover{
+        color: white !important;
+    }
+</style>
 </style>
 <script>
       function changeURL() {
@@ -143,7 +151,9 @@ div .radix-sort-element {
 sorting
 <!-- <span class="right-links" id="useraccount">Login</span> -->
 <span id="title">
-<a id='title-Bubble' class='selected-viz'>Bubble</a>
+<a id='title-BST' href="bst.html" >Binary Search Tree</a>
+<a id='title-BST' href="linked_list/list.html" >Linked-list</a>
+<a id='title-Bubble' href="bubble-sort.html" class='selected-viz'>Bubble</a>
 <!-- <a id='title-Selection'>Select</a>
 <a id='title-Insertion'>Insert</a>
 <a id='title-Merge'>Merge</a>
@@ -153,9 +163,9 @@ sorting
 <a id='title-Radix'>Radix</a> -->
 </span>
 <div id="mode-menu">
-<div id='mode-button' title='exploration'>Exploration Mode &#9663;</div>
+<!-- <div id='mode-button' title='exploration'>Exploration Mode &#9663;</div> -->
 <div id='other-modes'>
-<a title='e-Lecture'>e-Lecture Mode</a>
+<!-- <a title='e-Lecture'>e-Lecture Mode</a> -->
 </div>
 </div>
 </div>
@@ -713,7 +723,7 @@ Please <a href="https://visualgo.net/login"><u>login</u></a> if you are a repeat
 </div>
 <div id="sort-viz">
 
-<div class="container" style="display: flex;">
+<div class="container" style="display: flex; text-align: left; margin-bottom: 1rem;">
     <div class="row" style="float: left; padding-left: 3rem; padding-right: 3rem;">
       <div class="col-6">
             <h4 style="color: red;">Advantages</h4>
@@ -728,12 +738,32 @@ Please <a href="https://visualgo.net/login"><u>login</u></a> if you are a repeat
             It does more element assignments than its counterpart, insertion sort.
           </div>
     </div>
-    <div style="float: left; padding-left: 3rem; padding-right: 3rem">
-        
+    <div style="float: left; padding-left: 3rem; padding-right: 3rem; height: 250px; overflow: auto;">
+        <h4 style="color: red;">Code</h4>
+      <code>
+        void swap(int *xp, int *yp) <br>
+        { <br>
+          int temp = *xp; <br>
+          *xp = *yp; <br>
+          *yp = temp; <br>
+        } <br>
+
+        // A function to implement bubble sort <br>
+        void bubbleSort(int arr[], int n) <br>
+        { <br>
+          int i, j; <br>
+          for (i = 0; i < n-1; i++) <br> 
+
+          // Last i elements are already in place <br>
+          for (j = 0; j < n-i-1; j++) <br>
+          if (arr[j] > arr[j+1]) <br>
+          swap(&arr[j], &arr[j+1]); <br>
+        } <br>
+      </code>
     </div>
 </div>
 
-<svg id="viz-canvas"></svg><br>
+<svg id="viz-canvas" style="float:left;" ></svg><br>
 <svg id="viz-counting-sort-secondary-canvas"></svg>
 <div id="viz-radix-sort-canvas">
 <span id="radix-sort-bucket-labels-collection">
