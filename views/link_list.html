@@ -8,7 +8,7 @@
 <meta name="csrf-token" content="6jt66EiqRyA9nTAliOgnvld8odDus3yRumYtO0ai">
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
 <meta property="og:image" content="https://visualgo.net/img/png/list.png">
-<title>VisuAlgo - Linked List (Single, Doubly), Stack, Queue, Deque</title>
+<title>X-MEN LINKED LIST</title>
 <link rel="icon" href="https://visualgo.net/img/favicon.png" type="image/x-icon">
 <link rel="shortcut icon" href="https://visualgo.net/img/favicon.png" type="image/x-icon">
 <link rel="apple-touch-icon" href="https://visualgo.net/img/favicon.png">
@@ -86,8 +86,8 @@
 </head>
 <body>
 <div id="top-bar">
-<a href="http://www.comp.nus.edu.sg/~stevenha"><span class="colour" style="border: 1px solid green; border-radius: 25px;">7</span></a>&nbsp;&nbsp;&nbsp;
-<a id="home" href="/">X-<span class="colour">MEN</span><span style="font-size: 40%">.net</span></a>
+<!-- <a href="http://www.comp.nus.edu.sg/~stevenha"><span class="colour" style="border: 1px solid green; border-radius: 25px;">7</span></a>&nbsp;&nbsp;&nbsp; -->
+<a id="home" href="../index.html">X-<span class="colour">MEN</span><span style="font-size: 40%"></span></a>
 /
 <!-- <select id="Language" onchange="changeURL()">
 <option value="en" selected>en</option>
@@ -102,21 +102,21 @@
 <option value="ko">ko</option>
 <option value="vi">vi</option>
 </select> -->
-/list
-<span class="right-links" id="useraccount">Login</span>
+LINKED LIST
+<!-- <span class="right-links" id="useraccount">Login</span> -->
 <span id="title">
-<a id='title-LL' class='selected-viz'>LL</a>
-<a id='title-Stack'>Stack</a>
-<a id='title-Queue'>Queue</a>
-<a id='title-DLL'>DLL</a>
-<a id='title-Deque'>Deque</a>
+<a id='title-LL' href="linked_list.html" class='selected-viz'>Linked list</a>
+<a id='title-BST' href="bst.html">Binary Search Tree</a>
+<!-- <a id='title-BST' href="list.html" class='selected-viz'>Linked-list</a> -->
+<a id='title-Bubble' href="bubble-sort.html" >Bubble sort</a>
+<a id='title-Selection' href="selection-sort.html" >Selecttion sort</a>
 </span>
-<div id="mode-menu">
+<!-- <div id="mode-menu">
 <div id='mode-button' title='exploration'>Exploration Mode &#9663;</div>
 <div id='other-modes'>
 <a title='e-Lecture'>e-Lecture Mode</a>
 </div>
-</div>
+</div> -->
 </div>
 <div id="dark-overlay"></div>
 <div id="status" class="panel"><p></p></div>
@@ -143,7 +143,22 @@
 <span id="go-to-end" class="media-control-button" title="go to end" onclick=goToEnd()><img src="https://visualgo.net/img/goToEnd.png" alt="go to end"></span>
 <div id="progress-bar" class="media-control-button"></div>
 </div>
-<div id='viz'></div>
+<div id='viz'>
+  <div class="container jumbotron">
+    <div class="row" style="display: flex; padding-left: 3rem; text-align: left; padding-right: 3rem;">
+      <div class="col-6" style="float: left; width: 50%; padding-left: 1rem; padding-right: 1rem;" >
+        <span style="color: white; display: block; background-color: rgb(75, 101, 186);">Advantages</span>
+        Provides linear data structure solutions. <br>
+            Easy to insert, delete node without reorganize the array. <br>
+            Allocate dynamic memory
+      </div>
+      <div class="col-6" style="float: left; width: 50%; padding-left: 1rem; padding-right: 1rem;">
+        <span style="color: white; display: block; background-color: rgb(75, 101, 186);">Disadvantages</span>
+        Do not allow random access to data. So sometimes, we must traverse all node to do what we want (delete tail, insert tail) <br>
+      </div>
+    </div>
+  </div>
+</div>
 <div id='current-action' class='panel'></div>
 <div id='e-lecture' class='panel'></div>
 <div id="overlay" hidden></div>
@@ -647,9 +662,9 @@ Please <a href="https://visualgo.net/login"><u>login</u></a> if you are a repeat
 <div id="actions-hide" class="panel-hide"><img src="https://visualgo.net/img/arrow_white_right.png" alt=">" title="show/hide actions panel" /></div>
 <div id="actions-extras">
 <div class="create action-menu-pullout">
-<div id="create-empty" class="execAction new-menu-option coloured-menu-option" onClick="empty()"><p>Empty</p></div>
+<!-- <div id="create-empty" class="execAction new-menu-option coloured-menu-option" onClick="empty()"><p>Empty</p></div> -->
 <div id="create-random" class="execAction new-menu-option coloured-menu-option" onClick="random()"><p>Random</p></div>
-<div id="create-random-sorted" class="execAction new-menu-option coloured-menu-option" onClick="randomSorted()"><p>Random Sorted</p></div>
+<!-- <div id="create-random-sorted" class="execAction new-menu-option coloured-menu-option" onClick="randomSorted()"><p>Random Sorted</p></div> -->
 <div id="create-random-fixed-size" class="execAction new-menu-option coloured-menu-option" onclick="createModelingOpen('createfixedsize')"><p>Random Fixed Size</p>
 <div id="createfixedsize-input" class="new-menu-option">
 <input type="number" id="v-create-size" title="Enter the size of the linked list" autocomplete="off" min=1 max=10 value=7>
@@ -725,9 +740,9 @@ Please <a href="https://visualgo.net/login"><u>login</u></a> if you are a repeat
 </div>
 </div>
 <div id="bottom-bar">
-<a id="trigger-about">About</a>
+<!-- <a id="trigger-about">About</a>
 <a id="trigger-team">Team</a>
-<a id="trigger-terms">Terms of use</a>
+<a id="trigger-terms">Terms of use</a> -->
 </div>
 <div id="about" class="overlays">
 <h4>About</h4><span class='close-overlay'>&#x2715;</span>

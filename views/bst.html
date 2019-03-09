@@ -86,7 +86,7 @@
 </head>
 <body>
 <div id="top-bar">
-<a href="http://www.comp.nus.edu.sg/~stevenha"><span class="colour" style="border: 1px solid green; border-radius: 25px;">7</span></a>&nbsp;&nbsp;&nbsp;
+<!-- <a href="http://www.comp.nus.edu.sg/~stevenha"><span class="colour" style="border: 1px solid green; border-radius: 25px;">7</span></a>&nbsp;&nbsp;&nbsp; -->
 <a id="home" href="../index.html">X-<span class="colour">MEN</span><span style="font-size: 40%"></span></a>
 
 <!-- <select id="Language" onchange="changeURL()">
@@ -105,8 +105,9 @@
 /BST
 <!-- <span class="right-links" id="useraccount">Login</span> -->
 <span id="title">
+<a id='title-BST' href="link_list.html" >Linked-list</a>
 <a id='title-BST' href="bst.html" class='selected-viz'>Binary Search Tree</a>
-<a id='title-BST' href="linked_list/list.html" >Linked-list</a>
+
 <a id='title-Bubble' href="bubble-sort.html" >Bubble sort</a>
 <a id='title-Selection' href="selection-sort.html">Select sort</a>
 <!-- <a id='title-AVL'>AVL Tree</a> -->
@@ -147,7 +148,7 @@
   <div class="container jumbotron">
     <div class="row" style="display: flex; padding-left: 3rem; text-align: left; padding-right: 3rem; ">
       <div class="col-6" style="float: left; padding-left: 1rem; padding-right: 1rem; width: 50%" >
-        <h4 style="color: red;">Advantages</h4>
+        <span style="color: white; display: block; background-color: rgb(75, 101, 186);">Advantages</span>
         - We can always keep the cost of insert(), delete(), lookup() to O(logN)
         where N is the number of nodes in the tree. <br>
         - We have an ordering of keys stored in the tree.<br>
@@ -155,7 +156,7 @@
         This is because it is possible to look at the data structure as a sorted array. <br>
       </div>
       <div class="col-6" style="float: left; padding-left: 1rem; padding-right: 1rem; width: 50%">
-        <h4 style="color: red;">Disadvantages</h4>
+        <span style="color: white; display: block; background-color: rgb(75, 101, 186);">Disadvantages</span>
         - The main disadvantage is that we should always implement a balanced binary search tree - AVL tree, Red-Black tree, Splay tree. 
         Otherwise the cost of operations may not be logarithmic and degenerate into a linear search on an array. <br>
       </div>
@@ -786,9 +787,9 @@ Please <a href="https://visualgo.net/login"><u>login</u></a> if you are a repeat
 <div class="inorder action-menu-pullout"></div>
 </div> -->
 <div id="bottom-bar">
-<a id="trigger-about">About</a>
+<!-- <a id="trigger-about">About</a>
 <a id="trigger-team">Team</a>
-<!-- <a id="trigger-terms">Terms of use</a> -->
+<a id="trigger-terms">Terms of use</a> -->
 </div>
 <div id="about" class="overlays">
 <h4>About</h4><span class='close-overlay'>&#x2715;</span>
