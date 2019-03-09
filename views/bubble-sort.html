@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="https://visualgo.net/css/viz-1.0.1.css">
 <link rel="stylesheet" href="https://visualgo.net/css/visual.css">
 <link rel="stylesheet" href="https://visualgo.net/css/drawgraph.css">
+<link rel="stylesheet" href="./css/common.css">
 <style>
       #e-lecture {
         top: 45px;
@@ -741,26 +742,28 @@ Please <a href="https://visualgo.net/login"><u>login</u></a> if you are a repeat
     <div style="float: left; padding-left: 3rem; padding-right: 3rem; width: 50%; ">
       <div style="overflow: auto; height: 250px;">
         <h4 style="color: red;">Code</h4>
-      <code>
-        void swap(int *xp, int *yp) <br>
-        { <br>
-          int temp = *xp; <br>
-          *xp = *yp; <br>
-          *yp = temp; <br>
-        } <br>
+        <pre><code class = "computerGreen">
+void swap(int *xp, int *yp) 
+{
+  int temp = *xp; 
+  *xp = *yp; 
+  *yp = temp;
+} 
 
-        // A function to implement bubble sort <br>
-        void bubbleSort(int arr[], int n) <br>
-        { <br>
-          int i, j; <br>
-          for (i = 0; i < n-1; i++) <br> 
+// A function to implement bubble sort 
+void bubbleSort(int arr[], int n) 
+{ 
+  int i, j; 
+  for (i = 0; i < n-1; i++) 
 
-          // Last i elements are already in place <br>
-          for (j = 0; j < n-i-1; j++) <br>
-          if (arr[j] > arr[j+1]) <br>
-          swap(&arr[j], &arr[j+1]); <br>
-        } <br>
-      </code>
+  // Last i elements are already in place 
+  for (j = 0; j < n-i-1; j++){
+    if (arr[j] > arr[j+1]) 
+      swap(&arr[j], &arr[j+1]); 
+  } 
+
+} 
+                </code></pre>
     </div>
     </div>
     
